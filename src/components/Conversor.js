@@ -19,7 +19,7 @@ export default function Conversor() {
         <TextInput
           style={styles.input}
           placeholder="0"
-          value={Number(valor)}
+          value={valor}
           onChangeText={valor => setValor(Number(valor))}
           keyboardType="number-pad"
         />
@@ -50,13 +50,11 @@ const styles = StyleSheet.create({
 
   h1: {
     fontSize: 50,
-    // fontWeight: "bold",
     marginBottom: 100
   },
 
   h2: {
     fontSize: 20,
-    marginBottom: 20,
     fontWeight: "bold",
     marginBottom: 50
   },
@@ -94,7 +92,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: 300,
-    marginBottom: 40
+    marginBottom: 35
   },
 
   buttonText: {
