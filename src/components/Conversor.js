@@ -29,13 +29,23 @@ export default function Conversor() {
         <Text style={styles.buttonText}>Converter</Text>
       </TouchableOpacity>
 
-      <Text style={styles.h2}>Total de centavos: {valor * 100}</Text>
+      <Text style={styles.h2}>
+        Total de centavos: {Math.round(valor * 100)}
+      </Text>
 
       <View style={styles.textDiv}>
-        <Text style={styles.h3}>Moedas de 0,50: {(valor * 10) / 5}</Text>
-        <Text style={styles.h3}>Moedas de 0,25: {(valor * 10) / 2.5}</Text>
-        <Text style={styles.h3}>Moedas de 0,10: {(valor * 10) / 1}</Text>
-        <Text style={styles.h3}>Moedas de 0,05: {(valor * 10) / 0.5}</Text>
+        <Text style={styles.h3}>
+          Moedas de 0,50: {Math.round((valor * 10) / 5)}
+        </Text>
+        <Text style={styles.h3}>
+          Moedas de 0,25: {Math.round((valor * 10) / 2.5)}
+        </Text>
+        <Text style={styles.h3}>
+          Moedas de 0,10: {Math.round((valor * 10) / 1)}
+        </Text>
+        <Text style={styles.h3}>
+          Moedas de 0,05: {Math.round((valor * 10) / 0.5)}
+        </Text>
       </View>
     </View>
   );
