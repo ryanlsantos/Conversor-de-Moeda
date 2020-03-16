@@ -35,16 +35,16 @@ export default function Conversor() {
 
       <View style={styles.textDiv}>
         <Text style={styles.h3}>
-          Moedas de 0,50: {Math.round((valor * 10) / 5)}
+          Moedas de 0,50: {Math.round(valor / 0.5)}
         </Text>
         <Text style={styles.h3}>
-          Moedas de 0,25: {Math.round((valor * 10) / 2.5)}
+          Moedas de 0,25: {Math.round(valor/  0.25)}
         </Text>
         <Text style={styles.h3}>
-          Moedas de 0,10: {Math.round((valor * 10) / 1)}
+          Moedas de 0,10: {Math.round(valor / 0.1)}
         </Text>
         <Text style={styles.h3}>
-          Moedas de 0,05: {Math.round((valor * 10) / 0.5)}
+          Moedas de 0,05: {Math.round(valor / 0.05)}
         </Text>
       </View>
     </View>
